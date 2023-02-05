@@ -1,0 +1,224 @@
+@import "../../Style/colors";
+.third-container {
+  min-height: 500px;
+  display: flex;
+
+  // Buy Section
+  &__buy-section {
+    flex: 1;
+    background-image: url("../../images/Buy-a-Franchise1.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__buy-section-overlay {
+    background-color: rgba(0, 0, 0, 0.63);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+
+    @media (max-width: 480px) {
+      padding: 0 15px;
+    }
+  }
+
+  &__text-label {
+    color: #ffffff;
+    margin-top: 90px;
+    margin-bottom: 10px;
+  }
+  &__text-buy-title {
+    // color: $whiteColor;
+    // font-weight: bolder;
+    // font-size: 39px;
+    // padding-bottom: 40px;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  &__text-icons {
+    display: flex;
+    padding: 30px 0;
+    margin: 0 -15px;
+  }
+  &__text-icons-span {
+    display: flex;
+    flex-direction: column;
+    color: $whiteColor;
+    align-items: center;
+    padding: 0 15px;
+  }
+  &__text-icons-images {
+    padding-bottom: 10px;
+    filter: brightness(11);
+  }
+  &__text-buy-action {
+    color: $whiteColor;
+    border: solid 2px $whiteColor;
+    box-sizing: border-box;
+    width: fit-content;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 30px 0;
+    text-decoration: none;
+  }
+  &__text-buy-action:hover {
+    background-color: $secondaryBlueColor;
+    border-color: $secondaryBlueColor;
+  }
+
+  // Sell Section
+  &__sell-section {
+    flex: 1;
+    background-image: url("../../images/new/Sell a Franchise.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__sell-section-overlay {
+    background-color: #57598cbf;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+
+    @media (max-width: 480px) {
+      padding: 0 15px;
+    }
+  }
+  &__text-sell-title {
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  &__text-desc {
+    color: $whiteColor;
+    margin-bottom: 20px;
+  }
+  &__text-list {
+    color: $whiteColor;
+    padding: 10px 40px;
+  }
+  &__text-list-span > img {
+    width: 12px;
+    padding-right: 10px;
+  }
+  &__text-sell-action {
+    width: fit-content;
+    padding: 10px 20px;
+    color: $whiteColor;
+    background-color: $secondaryBlueColor;
+    cursor: pointer;
+    margin: 17px 0;
+    text-decoration: none;
+    border: solid 2px transparent;
+  }
+  &__text-sell-action:hover {
+    border-color: $whiteColor;
+    box-sizing: border-box;
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 1200px) {
+  .third-container {
+    &__text-sell-title,
+    &__text-buy-title {
+      font-size: 32px;
+    }
+
+    &__text-icons-span {
+      padding: 0 10px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .third-container {
+    &__text {
+      &-label {
+        margin-top: 70px;
+        margin-bottom: 10px;
+      }
+      &-buy-title {
+        font-size: 36px;
+      }
+      &-icons {
+        margin: 0 -10px;
+        font-size: 15px;
+      }
+      &-buy-action {
+        padding: 10px 15px;
+        margin: 30px 0;
+      }
+      &-sell-title {
+        font-size: 36px;
+      }
+      &-desc {
+        margin-bottom: 10px;
+      }
+      &-list {
+        padding: 6px 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .third-container {
+    display: block;
+    height: auto;
+  }
+}
+
+@media (max-width: 820px) {
+  .third-container {
+    &__text {
+      &-label {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+      &-buy-title {
+        font-size: 28px;
+      }
+      &-icons {
+        font-size: 10px;
+        &-span {
+          padding: 0 10px;
+        }
+      }
+      &-buy-action {
+        font-size: 10px;
+      }
+      &-sell-title {
+        font-size: 28px;
+      }
+      &-desc {
+        margin-bottom: 10px;
+      }
+      &-list {
+        padding: 6px 40px;
+      }
+      &-sell-action {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .third-container {
+    flex-direction: column;
+
+    &__text-icons {
+      margin: 0;
+      &-span {
+        padding: 0 4px;
+      }
+    }
+  }
+}

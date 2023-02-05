@@ -1,0 +1,106 @@
+@import '../Style/colors';
+
+.franchise-manual{
+    min-height: 100vh;
+    &__banner{
+        background: url('../images/new/Franchise Management Program.jpg');
+        background-size: cover;
+        background-color: $secondaryBlueColor;
+        color: $whiteColor;
+        font-size: 36px;
+        font-weight: 600;
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__body{
+        padding: 80px;
+        &-title{
+            text-align: center;
+            color: $primaryBlueColor;
+            padding-bottom: 20px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+        &-text{
+            text-align: justify;
+            color: $greyColor;
+        }
+        &-join{
+            padding-top: 30px;
+            &-button{
+                color: $whiteColor;
+                background-color: $primaryBlueColor;
+                padding: 10px 20px;
+                border: none;
+            }
+
+        }
+    }
+    &__popup{
+        &-title{
+            color: $primaryBlueColor;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 500;
+            padding-bottom: 20px;
+        }
+        &-form{
+            padding: 100px 30px;
+        }
+        &-row {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            &-input {
+                width: 45%;
+                background: transparent;
+                padding: 10px 5px;
+                border: none;
+                border-bottom: 1px solid $greyColor;
+                margin: 10px 0;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+            &-message {
+                width: 97%;
+                background: transparent;
+                padding: 10px 5px;
+                border: none;
+                border-bottom: 1px solid $greyColor;
+                margin: 10px 0;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        &-action {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            background-color: $secondaryBlueColor;
+            color: $whiteColor;
+            width: 150px;
+            padding: 8px 15px;
+            font-weight: 500;
+            margin: 10px 0;
+            cursor: pointer;
+            border: none;
+
+            &:focus {
+                outline: none;
+            }
+
+            &-disabled {
+                cursor: not-allowed;
+                background-color: $secondaryBlueColorLight1;
+            }
+        }
+    }
+}

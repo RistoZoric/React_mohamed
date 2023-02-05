@@ -1,0 +1,96 @@
+@import "../../Style/colors";
+
+.request_free_info {
+  margin-top: 20px;
+  margin-right: 50px;
+  display: flex;
+  flex-flow: wrap;
+
+  @media (max-width: 767px) {
+    margin-right: 0;
+  }
+
+  &__body-row-input {
+    margin-right: 0 !important;
+
+    &.app-select {
+      width: 101% !important;
+    }
+  }
+
+  &__body {
+    width: 100%;
+
+    &-row {
+      width: 100%;
+      overflow: hidden;
+
+      &-input {
+        margin-bottom: 20px;
+        width: 97%;
+        background: transparent;
+        padding: 20px 10px;
+        border: none;
+        font-size: 16px;
+        background-color: #f4f4f4;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &-message {
+        width: 97%;
+        background: transparent;
+        font-size: 16px;
+        padding: 20px 10px;
+        border: none;
+        background-color: #f4f4f4;
+
+        &.textarea {
+          height: 200px;
+          width: 93%;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    &-error {
+      color: red;
+      font-size: small;
+      margin-left: 10px;
+    }
+
+    &-action {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      background-color: $secondaryBlueColor;
+      color: $whiteColor;
+      width: 150px;
+      padding: 20px 15px;
+      font-weight: 500;
+      margin: 10px 0;
+      cursor: pointer;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+        //background-color: $secondaryBlueColorLight1;
+      }
+    }
+  }
+}
+
+.is_popup {
+  width: 100%;
+  background-color: unset;
+}

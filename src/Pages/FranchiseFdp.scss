@@ -1,0 +1,433 @@
+@import '../Style/colors';
+
+.franchise-fdp{
+    &__banner{
+        background-color: $secondaryBlueColor;
+        color: $whiteColor;
+        font-size: 36px;
+        font-weight: 600;
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__body{
+        &-about{
+            padding: 40px;
+            &-title{
+                text-align: center;
+                font-size: 20px;
+                font-weight: 700;
+                color: $primaryBlueColor;
+                margin-bottom: 20px;
+            }
+            &-desc{
+                text-align: justify;
+                color: $greyColor;
+            }
+        }
+        &-program{
+            padding: 60px;
+            background-color: $greyColor1;
+            &-label{
+                text-align: center;
+                font-size: 10px;
+                font-weight: 500;
+                color: $secondaryBlueColor;
+                margin-bottom: 10px;
+            }
+            &-title{
+                text-align: center;
+                font-size: 30px;
+                font-weight: 700;
+                color: $primaryBlueColor;
+                margin-bottom: 30px;
+            }
+            &-row{
+                display: flex;
+                &-card{
+                    width: 400px;
+                    padding: 20px;
+                    background-color: $whiteColor;
+                    margin: 20px;
+                    $this: &;
+                    &-title{
+                        text-align: center;
+                        font-size: 20px;
+                        font-weight: 800;
+                        color: $primaryBlueColor;
+                        padding: 30px 0;
+                        border-bottom: solid 1px $greyColor;
+                    }
+                    &-details{
+                        padding: 30px;
+                        &-row{
+                            display: flex;
+                            margin: 20px 0;
+                            color: $primaryBlueColor1;
+                            font-size: 18px;
+                            font-weight: 500;
+                            &-icon{
+                                border: solid 1px;
+                                box-sizing: border-box;
+                                border-radius: 50%;
+                                width: 45px;
+                                font-size: 40px;
+                                display: flex;
+                                height: 45px;
+                                align-content: flex-end;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 10px;
+                                color: $primaryBlueColor1;
+                                margin: 0 20px;
+                            }
+                        }
+                    }
+                    &-action{
+                        width: 100%;
+                        padding: 15px;
+                        color: $whiteColor;
+                        background-color: $primaryBlueColor1;
+                        border: none;
+                        font-size: 18px;
+                        display: flex;
+                        justify-content: center;
+                        column-gap: 15px;
+                        margin-bottom: 20px;
+                    }
+
+
+                     // Hover effect in card
+                    &_first:hover{
+                        background-color: $primaryBlueColor1;
+                        #{$this}-title{
+                            color: $whiteColor;
+                        }
+                        #{$this}-details{
+                            color: $whiteColor;
+                        }
+                        #{$this}-details-row{
+                            color: $whiteColor;
+                        }
+                        #{$this}-details-row-icon{
+                            border: solid 1px $secondaryBlueColor;
+                            color: $whiteColor;
+                        }
+                        #{$this}-action{
+                            color: $primaryBlueColor;
+                            background-color: $whiteColor;
+                        }
+                        & .grey-text{
+                            color: $greyColor;
+                        }
+                    }
+
+                    &_second:hover{
+                        background-color: #490bef;
+                        #{$this}-title{
+                            color: $whiteColor;
+                        }
+                        #{$this}-details{
+                            color: $whiteColor;
+                        }
+                        #{$this}-details-row{
+                            color: $whiteColor;
+                        }
+                        #{$this}-details-row-icon{
+                            border: solid 1px $secondaryBlueColor;
+                            color: $whiteColor;
+                        }
+                        #{$this}-action{
+                            color: $primaryBlueColor;
+                            background-color: $whiteColor;
+                        }
+                        & .grey-text{
+                            color: $greyColor;
+                        }
+                    }
+
+                    &_third:hover{
+                        background-color: #21c799;
+                        #{$this}-title{
+                            color: $whiteColor;
+                        }
+                        #{$this}-details{
+                            color: $whiteColor;
+                        }
+                        #{$this}-details-row{
+                            color: $whiteColor;
+                        }
+                        #{$this}-details-row-icon{
+                            border: solid 1px $secondaryBlueColor;
+                            color: $whiteColor;
+                        }
+                        #{$this}-action{
+                            color: $primaryBlueColor;
+                            background-color: $whiteColor;
+                        }
+                        & .grey-text{
+                            color: $greyColor;
+                        }
+                    }
+                }
+
+            }
+            &-body{
+                padding: 40px;
+                &-title{
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: $primaryBlueColor;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                &-desc{
+                    color: $greyColor;
+                    margin-bottom: 20px;
+                }
+                &-form{
+                    &-row {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-around;
+                    
+                        &-input {
+                            width: 47%;
+                            background: transparent;
+                            padding: 10px 5px;
+                            border: none;
+                            border-bottom: 1px solid $greyColor;
+                            margin: 10px 0;
+                    
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    
+                        &-message {
+                            width: 97%;
+                            background: transparent;
+                            padding: 10px 5px;
+                            border: none;
+                            border-bottom: 1px solid $greyColor;
+                            margin: 10px 0;
+                    
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+                    
+                    &-action {
+                        display: flex;
+                        justify-content: center;
+                        margin: auto;
+                        background-color: $secondaryBlueColor;
+                        color: $whiteColor;
+                        width: 150px;
+                        padding: 8px 15px;
+                        font-weight: 500;
+                        margin: 10px 0;
+                        cursor: pointer;
+                        border: none;
+                    
+                        &:focus {
+                            outline: none;
+                        }
+                    
+                        &-disabled {
+                            cursor: not-allowed;
+                            background-color: $secondaryBlueColorLight1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.grey-text{
+    color: $greyColor;
+}
+
+
+
+@media(max-width:1024px){
+    .franchise-fdp{
+        &__body{
+            &-program{
+                padding: 30px;
+                &-row{
+                    &-card{
+                        padding: 10px;
+                        margin: 10px;
+                        &-details{
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .franchise-fdp{
+        &__banner{
+            font-size: 28px;
+        }
+        &__body{
+            &-about{
+                &-desc{
+                    font-size: 14px;
+                }
+            }
+            &-program{
+                &-title{
+                    font-size: 28px;
+                }
+                &-row{
+                    &-card{
+                        &-title{
+                            font-size: 16px;
+                            padding: 20px 0;
+                        }
+                        &-details{
+                            &-row{
+                                margin: 12px 0;
+                                font-size: 12px;
+                                &-icon{
+                                    width: 30px;
+                                    font-size: 20px;
+                                    height: 30px;
+                                    padding: 5px;
+                                    margin: 0 10px;
+                                }
+                            }
+                        }
+                        &-action{
+                            font-size: 12px;
+                            padding: 10px;
+                            column-gap: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:425px){
+    .franchise-fdp{
+        &__banner{
+            font-size: 20px;
+            padding: 40px;
+        }
+        &__body{
+            &-about{
+                &-title{
+                    font-size: 18px;
+                }
+                &-desc{
+                    font-size: 12px;
+                }
+            }
+            &-program{
+                padding: 20px;
+                &-label{
+                    font-size: 10px;
+                }
+                &-title{
+                    font-size: 20px;
+                }
+                &-row{
+                    flex-direction: column;
+                    padding: 0 30px;
+                    &-card{
+                        width: auto;
+                        padding: 30px;
+                        &-title{
+                            font-size: 16px;
+                            padding: 20px 0;
+                        }
+                        &-details{
+                            padding: 10px 30px;
+                            &-row{
+                                margin: 12px 0;
+                                font-size: 12px;
+                                &-icon{
+                                    width: 30px;
+                                    font-size: 20px;
+                                    height: 30px;
+                                    padding: 5px;
+                                    margin: 0 10px;
+                                }
+                            }
+                        }
+                        &-action{
+                            font-size: 12px;
+                            padding: 10px;
+                            column-gap: 10px;
+                        }
+                    }
+                }
+                &-body{
+                    padding: 30px;
+                    &-title{
+                        font-size: 18px;
+                    }
+                    &-desc{
+                        font-size: 12px;
+                        text-align: justify;
+                    }
+                    &-form-row-input{
+                        width: 42%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(max-width:375px){
+    .franchise-fdp{
+        &__banner{
+            font-size: 18px;
+            padding: 40px;
+        }
+        &__body{
+            &-about{
+                &-title{
+                    font-size: 14px;
+                }
+                &-desc{
+                    font-size: 12px;
+                }
+            }
+            &-program{
+                padding: 15px;
+                &-label{
+                    font-size: 10px;
+                }
+                &-title{
+                    font-size: 18x;
+                }
+                &-row{
+                    flex-direction: column;
+                    padding: 0 20px;
+                    &-card{
+                        width: auto;
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+

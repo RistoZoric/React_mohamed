@@ -1,0 +1,223 @@
+@import "../Style/colors";
+
+.app-footer {
+  height: auto;
+  padding: 120px 120px 20px 120px;
+  background-color: #000;
+  color: $whiteColor;
+  display: flex;
+  flex-direction: column;
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    &-links {
+      display: flex;
+      flex-direction: column;
+    }
+    &-label {
+      font-weight: bold;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    &-item {
+      color: $greyColor;
+      margin-bottom: 10px;
+      font-size: 14px;
+      text-decoration: none;
+
+      &-mail {
+        text-decoration: underline;
+      }
+
+      &-phone a {
+        color: #a7a7a7;
+      }
+
+      &-input {
+        width: 84%;
+        background: transparent;
+        padding: 20px 5px;
+        border: none;
+        border-bottom: 1px solid $greyColor;
+        margin: 10px 0;
+        color: $whiteColor;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &-arrow {
+        position: relative;
+        bottom: 48px;
+        left: 195px;
+      }
+    }
+
+    &-logo img {
+      width: 240px;
+    }
+
+    &-office {
+    }
+
+    &-links {
+    }
+
+    &-newsletter {
+      width: 18%;
+    }
+  }
+
+  &__rights {
+    color: $greyColor;
+    margin-top: 50px;
+    font-size: 14px;
+    border-top: 1px solid $greyColor1;
+    padding: 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .text-dark {
+    color: #000;
+  }
+}
+
+@media (max-width: 1024px) {
+  .app-footer {
+    padding: 60px 60px 20px 60px;
+
+    &__main {
+      &-logo img {
+        width: 220px;
+      }
+
+      &-label {
+        margin-bottom: 15px;
+        font-size: 14px;
+      }
+
+      &-item {
+        margin-bottom: 10px;
+        font-size: 14px;
+
+        &-arrow {
+          left: 175px;
+        }
+      }
+
+      &-newsletter {
+        width: 22%;
+      }
+
+      &-label {
+        margin-bottom: 15px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .app-footer {
+    // height: 300px;
+    padding: 50px 20px 20px 20px;
+
+    &__main {
+      &-logo img {
+        width: 200px;
+      }
+
+      &-label {
+        margin-bottom: 10px;
+      }
+
+      &-item {
+        margin-bottom: 10px;
+        font-size: 12px;
+
+        &-arrow {
+          left: 168px;
+          bottom: 32px;
+        }
+
+        &-input {
+          margin: 0;
+          padding: 16px 5px;
+        }
+      }
+
+      &-newsletter {
+        width: 25%;
+      }
+
+      &-label {
+        margin-bottom: 15px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .app-footer {
+    height: 658px;
+    padding: 50px 20px 20px 40px;
+    flex-direction: column;
+
+    &__main {
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: flex-start;
+
+      &-office {
+        margin-bottom: 10px;
+      }
+
+      &-links {
+        margin-bottom: 10px;
+      }
+
+      &-newsletter {
+        margin-bottom: 10px;
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: row;
+
+        &-icon {
+          position: relative;
+          top: 15px;
+        }
+
+        &-input {
+          padding: 15px 10px;
+          width: auto;
+        }
+
+        &-arrow {
+          left: 0;
+          top: 15px;
+        }
+      }
+
+      &-newsletter {
+        width: 25%;
+      }
+
+      &-label {
+        margin-bottom: 15px;
+        font-size: 14px;
+      }
+    }
+  }
+}

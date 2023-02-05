@@ -1,0 +1,238 @@
+@import "../../Style/colors";
+.second-container {
+  padding: 50px 100px;
+  height: 550px;
+  display: flex;
+  &__image {
+  }
+  &__image-about > img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+  }
+  &__text-about {
+    background-color: $primaryBlueColor;
+    color: #ffffff;
+    /* inline-size: fit-content; */
+    padding: 45px;
+    width: 187px;
+    position: relative;
+    bottom: 180px;
+    left: 350px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  &__text {
+    width: 50%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 60px;
+    padding-left: 120px;
+    &-label {
+      font-size: 16px;
+      font-weight: 500;
+      color: $secondaryBlueColor;
+      margin-bottom: 20px;
+    }
+    &-title {
+      font-size: 48px;
+      font-weight: 600;
+      color: $primaryBlueColor;
+      margin-bottom: 30px;
+      line-height: 1;
+    }
+    &-descp {
+      width: 100%;
+      font-size: 16x;
+      letter-spacing: stre;
+      color: $greyColor;
+      margin-bottom: 30px;
+    }
+    &-action {
+      width: fit-content;
+      padding: 10px 20px;
+      margin-top: 20px;
+      color: $whiteColor;
+      background-color: $secondaryBlueColor;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    &-action:hover {
+      background-color: $primaryBlueColor;
+    }
+    &-list {
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 20px;
+      padding-bottom: 20px;
+      color: $primaryBlueColor;
+      font-weight: 600;
+    }
+    &-list a {
+      text-decoration: none;
+      color: $greyColor;
+    }
+    &-list-span {
+      font-size: 20px;
+      color: $greyColor;
+    }
+  }
+  .line {
+    border-bottom: solid 1px $greyColor;
+  }
+}
+
+@media (max-width: 1400px) {
+  .second-container {
+    &__text-title {
+      font-size: 34px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .second-container {
+    display: block;
+    height: auto;
+
+    &__image {
+      position: relative;
+    }
+
+    &__text-about {
+      position: absolute;
+      left: 0;
+      bottom: 4px;
+    }
+
+    &__text {
+      width: 100%;
+      padding: 50px;
+    }
+
+    &__text-action {
+      margin-top: 30px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .second-container {
+    &__image-about > img {
+      width: 100%;
+      height: 450px;
+    }
+    &__text-about {
+      padding: 22px;
+      font-size: 20px;
+    }
+    &__text {
+      &-label {
+        font-size: 13px;
+        margin-bottom: 15px;
+      }
+      &-title {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      &-descp {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .second-container {
+    &__text {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@media (max-width: 820px) {
+  .second-container {
+    padding: 40px 60px 0;
+    &__image {
+      &-about > img {
+        height: 350px;
+      }
+    }
+
+    &__text {
+      padding-top: 20px;
+      &-label {
+        margin-bottom: 10px;
+      }
+      &-title {
+        font-size: 26px;
+        margin-bottom: 10px;
+      }
+      &-descp {
+        font-size: 10px;
+      }
+      &-list {
+        margin-bottom: 8px;
+        font-size: 14px;
+        padding-bottom: 15px;
+        &-span {
+          font-size: 14px;
+        }
+      }
+      &-action {
+        padding: 10px 15px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .second-container {
+    padding: 30px 20px;
+    &__image {
+      &-about > img {
+        height: 260px;
+      }
+    }
+    &__text-about {
+      padding: 15px;
+      width: 60px;
+      font-size: 8px;
+    }
+    &__text {
+      padding-top: 20px;
+      padding-bottom: 0;
+
+      &-label {
+        margin-bottom: 5px;
+        font-size: 10px;
+      }
+      &-title {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+      &-descp {
+        font-size: 8px;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      &-list {
+        margin-bottom: 5px;
+        font-size: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        &-span {
+          font-size: 10px;
+        }
+      }
+      &-action {
+        padding: 6px 12px;
+        font-size: 10px;
+      }
+    }
+  }
+}

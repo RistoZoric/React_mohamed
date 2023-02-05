@@ -1,0 +1,89 @@
+@import "../../Style/colors";
+
+.buy-franchise {
+    &__body {
+        &-search {
+            width: 100%;
+
+            &-one {
+                background-color: $lightBlueColor;
+                padding: 20px 60px 20px 20px;
+                margin-bottom: 10px;
+
+                &-title {
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                    font-size: 22px;
+                    color: $primaryBlueColor;
+                }
+
+                &-select {
+                    margin-bottom: 10px;
+                    color: $greyColor;
+                }
+
+                &-action {
+                    cursor: pointer;
+                    padding: 10px 25px;
+                    background-color: $secondaryBlueColor;
+                    color: $whiteColor;
+                    font-size: 12px;
+                    font-weight: 500;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                &-action h4 {
+                    margin: 0;
+                    margin-right: 5px;
+                }
+            }
+
+            &-two {
+                background-color: $lightBlueColor;
+                padding: 20px;
+
+                &-item {
+                    display: flex;
+                    font-weight: 400;
+                    border-bottom: 1px solid $greyColor;
+                    padding: 10px 0;
+                    color: $primaryBlueColor;
+                    cursor: pointer;
+
+                    &:hover {
+                        font-weight: bold;
+                    }
+                }
+
+                &-arrow {
+                    margin-right: 10px;
+                    font-weight: bold;
+                    margin-left: auto;
+                }
+            }
+
+        }
+    }
+}
+
+.tab-active {
+    font-weight: bold;
+}
+
+.button-disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+// @media (max-width: 1200px) {
+//     .buy-franchise{
+//         &__body{
+//             &-search{
+//                 display: none;
+//             }
+//         }
+//     }
+
+// }

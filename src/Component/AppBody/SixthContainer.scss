@@ -1,0 +1,39 @@
+@import '../../Style//colors';
+.sixth-container{
+    padding: 60px;
+    &__label{
+        text-align: center;
+        color: $primaryBlueColor;
+        margin-bottom: 20px;
+    }
+    &__title{
+        text-align: center;
+        color: $primaryBlueColor;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:1024px) {
+    .sixth-container{
+        &__label{
+            margin-bottom: 15px;
+        }
+        &__title{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media(max-width:820px){
+    .sixth-container{
+        padding: 40px;
+        &__label{
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        &__title{
+            font-size: 30px;
+        }
+    }
+}

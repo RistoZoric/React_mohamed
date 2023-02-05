@@ -1,0 +1,44 @@
+@import '../Style/colors';
+
+.about-khalifafund{
+    &__banner{
+        background-image: url('../images/khalifa_fund_banner.jpg');
+        background-color: $secondaryBlueColor;
+        color: $whiteColor;
+        font-size: 36px;
+        font-weight: 600;
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__body{
+        padding: 60px;
+        text-align: justify;
+        &-banner{
+            text-align: center;
+            img{
+                width: 30%;
+            }
+
+        }
+    }
+    &__body p, li{
+        color: $greyColor;
+    }
+    &__body h3, h4{
+        color: $primaryBlueColor;
+    }
+}
+.readmore{
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}
+.readmore a{
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,24 @@
+{
+    "app":{
+        "navbar":{
+            "about": "About",
+            "buy-a-franchise": "Buy a Franchise",
+            "sell-a-franchise": "Sell a Franchise",
+            "franchise-quiz": "Franchise Quiz",
+            "services": "Services",
+            "academy": "Academy",
+            "media": "Media",
+            "login": "Login",
+            "register": "Register",
+            "logout": "Logout"
+        },
+        "home":{
+            "first-container":{
+                "label":"FRANCHISE YOUR BUSINESS",
+                "title":"We’re here to support you grow and expand, locally and internationally.Learn how to franchise and discover how you can become world leader through franchising.",
+                "description":"Franchise your business, Take your Franchise to the world. Come with us to the new world of franchise. Equire and Explore.",
+                "action":"Enquire Now"
+            }
+        }
+    }
+}

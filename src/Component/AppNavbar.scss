@@ -1,0 +1,166 @@
+@import "../Style/colors";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  &__wrapper {
+    padding: 20px 40px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: end;
+  }
+
+  &__logo img {
+    // width: 100%;
+    height: 90px;
+  }
+
+  &__items {
+    display: flex;
+  }
+  &__item1{
+    padding-top: 30px;
+    color: #142068;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    height: 30px;
+    font-size: 15px;
+  }
+  &__item {
+    padding-top: 30px;
+    color: #142068;
+    margin-right: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    height: 30px;
+    font-size: 15px;
+    &-selected {
+      // text-decoration: underline;
+      border-bottom: solid 2px $primaryBlueColor;
+    }
+  }
+
+  &__login.svg-icon {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  &__login-text {
+    margin: 22px 0;
+    padding: 5px 8px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: $secondaryBlueColor;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  &__arabic {
+    cursor: pointer;
+    color: $primaryBlueColor;
+    margin-left: 7px;
+    margin-bottom: 3px;
+
+    svg {
+      margin-right: 5px;
+    }
+
+    &:hover {
+      font-weight: 600;
+    }
+  }
+
+  &__services:hover .navbar__subservices {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subservices {
+    display: none;
+    position: absolute;
+    background-color: $primaryBlueColor;
+    top: 80px;
+
+    &-item {
+      color: $whiteColor;
+      text-decoration: none;
+      padding: 10px 15px;
+    }
+
+    &-item:hover {
+      background-color: $secondaryBlueColorLight;
+    }
+  }
+
+  &__context-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    &__logo img {
+      height: 90px;
+    }
+
+    &__login-text {
+      margin: 22px 0;
+      padding: 5px 8px;
+      border-radius: 50%;
+      color: #ffffff;
+      background-color: $secondaryBlueColor;
+      cursor: pointer;
+      width: 20px;
+    }
+
+    &__context-menu {
+      display: flex;
+
+      &-trigger {
+        margin: 25px 0;
+        padding: 5px;
+        cursor: pointer;
+        color: $primaryBlueColor;
+      }
+
+      &-drawer {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+    }
+  }
+
+  .hidder {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    &__logo img {
+      height: 83px;
+    }
+
+    &__context-menu-trigger {
+      margin: 22px 0;
+    }
+
+    &__wrapper {
+      padding-left: 0px;
+      padding-right: 10px;
+    }
+
+    &__login {
+      &-mobile {
+        display: flex;
+      }
+    }
+  }
+}

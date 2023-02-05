@@ -1,0 +1,16 @@
+@import "../Style/colors";
+.app-select{
+    width: 100%;
+    padding: 8px 0;
+    border: unset;
+    border-bottom: 1px solid $greyColor;
+    background-color: transparent;
+    // &:focus-visible{
+    //     border: unset;
+    // }
+    // &:focus{
+    //     border: unset;
+    // }
+    &__option{
+    }
+}

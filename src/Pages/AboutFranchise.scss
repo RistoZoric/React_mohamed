@@ -1,0 +1,46 @@
+@import "../Style/colors";
+
+.about-franchise {
+  &__banner {
+    background-image: url('../images/new/About - Francorp.jpg');
+    background-color: $secondaryBlueColor;
+    color: $whiteColor;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__body {
+    padding: 60px;
+    text-align: justify;
+    &-title {
+      padding-bottom: 15px;
+      color: $primaryBlueColor;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    &-text {
+      color: $greyColor;
+      font-size: 14px;
+      padding-bottom: 20px;
+    }
+    &-banner {
+      text-align: center;
+      img {
+        width: 30%;
+      }
+    }
+  }
+}
+.readmore{
+  text-align: right;
+  display: flex;
+  justify-content: end;
+}
+.readmore a{
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,313 @@
+@import "../Style/colors";
+
+.franchise-sme {
+  min-height: 100vh;
+  &__banner {
+    background-color: $secondaryBlueColor;
+    color: $whiteColor;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__body {
+    padding: 40px 80px;
+    &-title {
+      color: $primaryBlueColor;
+      font-size: 25px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    &-desc {
+      text-align: justify;
+      color: $greyColor;
+      margin-bottom: 20px;
+    }
+    &-support {
+      padding: 20px 0;
+      &-title {
+        color: $primaryBlueColor;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+      }
+      &-label {
+        text-align: center;
+        color: $primaryBlueColor;
+      }
+      &-body {
+        margin: 30px 0;
+        &-row {
+          display: flex;
+          justify-content: space-around;
+          padding: 30px;
+        }
+        &-card {
+          padding: 0 10px;
+          text-align: center;
+
+          &-img {
+            width: 100px;
+            margin-bottom: 15px;
+          }
+          &-title {
+            margin-bottom: 10px;
+            font-weight: 800;
+            color: $primaryBlueColor;
+            height: 30px;
+          }
+          &-desc {
+            color: $greyColor;
+            margin-bottom: 20px;
+          }
+          &-button {
+            padding: 8px 12px;
+            background-color: $primaryBlueColor;
+            color: $whiteColor;
+            border: none;
+          }
+          &-button span {
+            position: relative;
+            top: 3px;
+          }
+        }
+      }
+    }
+  }
+  &__popup {
+    display: flex;
+    &-img {
+      width: 50%;
+      height: 450px;
+    }
+    &-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &-content {
+      width: 50%;
+      padding: 80px 20px;
+      &-title {
+        font-size: 30px;
+        font-weight: 700;
+        color: $primaryBlueColor;
+      }
+      &-list {
+        color: $primaryBlueColor;
+        font-size: 15px;
+        line-height: 25px;
+        margin: 20px;
+      }
+      &-button {
+        width: 100%;
+        padding: 5px;
+        font-size: 15px;
+        color: $whiteColor;
+        background-color: $secondaryBlueColor;
+        border: none;
+      }
+    }
+    &-form {
+      padding: 100px 30px;
+    }
+    &-row {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+
+      &-input {
+        width: 45%;
+        background: transparent;
+        padding: 10px 5px;
+        border: none;
+        border-bottom: 1px solid $greyColor;
+        margin: 10px 0;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &-message {
+        width: 97%;
+        background: transparent;
+        padding: 10px 5px;
+        border: none;
+        border-bottom: 1px solid $greyColor;
+        margin: 10px 0;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    &-action {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      background-color: $secondaryBlueColor;
+      color: $whiteColor;
+      width: 150px;
+      padding: 8px 15px;
+      font-weight: 500;
+      margin: 10px 0;
+      cursor: pointer;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+
+      &-disabled {
+        cursor: not-allowed;
+        background-color: $secondaryBlueColorLight1;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .franchise-sme {
+    &__body {
+      &-support {
+        &-body {
+          &-row {
+            padding: 20px 10px;
+          }
+          &-card {
+            margin: 5px;
+            &-title {
+              font-size: 14px;
+            }
+            &-desc {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .franchise-sme {
+    &__banner {
+      font-size: 30px;
+    }
+    &__body {
+      padding: 20px 40px;
+      &-support {
+        &-body {
+          &-row {
+            padding: 20px 10px;
+          }
+          &-card {
+            &-img {
+              width: 110px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .franchise-sme {
+    &__banner {
+      font-size: 22px;
+      padding: 40px 22px;
+    }
+    &__body {
+      padding: 20px 20px;
+      &-title {
+        font-size: 22px;
+      }
+      &-desc {
+        font-size: 14px;
+      }
+      &-support {
+        &-title {
+          font-size: 24px;
+        }
+        &-label {
+          font-size: 12px;
+        }
+        &-body {
+          &-row {
+            padding: 0;
+          }
+          &-card {
+            &-title {
+              font-size: 8px;
+              margin-bottom: 5px;
+            }
+            &-desc {
+              font-size: 8px;
+            }
+            &-img {
+              width: 60px;
+            }
+            &-button {
+              padding: 5px;
+              font-size: 8px;
+              span {
+                top: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &__popup {
+      &-img {
+        height: 260px;
+      }
+      &-content {
+        padding: 50px 5px;
+        &-title {
+          font-size: 16px;
+        }
+        &-list {
+          font-size: 12px;
+          margin: 10px;
+          line-height: 15px;
+        }
+        &-button {
+          font-size: 12px;
+        }
+      }
+      &-form {
+        padding: 40px 10px;
+      }
+      &-row {
+        &-input {
+          width: 43%;
+          padding: 7px 5px;
+          margin: 7px 0;
+        }
+      }
+      &-action {
+        font-size: 12px;
+        padding: 5px 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .franchise-sme {
+    &__banner {
+      font-size: 20px;
+      padding: 40px 10px;
+    }
+    &__body {
+      padding: 20px 10px;
+    }
+  }
+}

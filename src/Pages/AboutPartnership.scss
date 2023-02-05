@@ -1,0 +1,20 @@
+@import '../Style/colors';
+
+.about-partnership{
+    &__banner{
+        background-image: url('../images/new/About - Partnership1.jpg');
+        background-color: $secondaryBlueColor;
+        color: $whiteColor;
+        font-size: 36px;
+        font-weight: 600;
+        padding: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__body{
+        padding: 60px;
+        text-align: justify;
+        color: $greyColor;
+    }
+}
