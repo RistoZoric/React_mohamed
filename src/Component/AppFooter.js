@@ -92,7 +92,7 @@ export default function AppFooter() {
         </div>
       </div>
       <div className="app-footer__rights">
-        <div className="left">@2022. All Rights reserved.</div>
+        <div className="left">@2023. All Rights reserved.</div>
         <div className="right">
           <img width={125} height={40} src={stripe} alt="food" />
         </div>
